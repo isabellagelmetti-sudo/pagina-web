@@ -10,9 +10,6 @@ body {
     color: white;
 }
 
-/* -------------------- */
-/* PÁGINA PRINCIPAL */
-/* -------------------- */
 .contenedor-inicio {
     width: 100%;
     height: 100vh;
@@ -25,7 +22,7 @@ body {
     align-items: center;
 }
 
-/* Capa oscura balanceada para apreciar los detalles del humo */
+
 .overlay {
     width: 100%;
     height: 100vh;
@@ -50,13 +47,13 @@ body {
 .eslogan {
     font-size: 18px;
     margin-bottom: 35px;
-    color: #d4af37; /* Dorado */
+    color: #d4af37; 
     font-weight: 500;
     letter-spacing: 1px;
     text-shadow: 0px 2px 8px rgba(10, 46, 48, 0.9);
 }
 
-/* Formulario traslúcido premium */
+
 .formulario {
     width: 100%;
     max-width: 380px;
@@ -105,9 +102,7 @@ body {
     box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
 }
 
-/* -------------------- */
-/* SISTEMA.HTML */
-/* -------------------- */
+
 .contenedor-test {
     width: 100%;
     min-height: 100vh;
@@ -205,13 +200,11 @@ body {
     box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
 }
 
-/* -------------------- */
-/* RESULTADO.HTML */
-/* -------------------- */
+
 .resultado-container {
     width: 100%;
     height: 100vh;
-    background-image: url("imagenes/fondo.back.png"); /* Mismo fondo premium */
+    background-image: url("imagenes/fondo.back.png"); 
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -255,7 +248,7 @@ body {
     object-fit: contain;
     margin-bottom: 25px;
     filter: drop-shadow(0px 10px 20px rgba(0,0,0,0.8));
-    animation: flotarPerfume 4s ease-in-out infinite; /* Animación de flotación */
+    animation: flotarPerfume 4s ease-in-out infinite; 
 }
 
 #descripcionPerfume {
@@ -284,7 +277,7 @@ body {
     box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
 }
 
-/* EFECTO FLOTANTE */
+
 @keyframes flotarPerfume {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-10px); }
