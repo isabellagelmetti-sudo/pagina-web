@@ -13,7 +13,7 @@ function ingresar(){
 
 let genero = "";
 
-// 6 Masculinos
+
 let leMaleClasico = 0;
 let ultraMale = 0;
 let leMaleParfum = 0;
@@ -21,7 +21,7 @@ let leBeau = 0;
 let leBeauParfum = 0;
 let scandalHombre = 0;
 
-// 6 Femeninos
+
 let classique = 0;
 let laBelle = 0;
 let laBelleParfum = 0;
@@ -40,7 +40,7 @@ function marcarSeleccion(boton){
     boton.style.color = "black";
 }
 
-/* SUMAR PUNTOS SEGÚN OPCIÓN */
+
 
 function sumarPuntos(tipo, boton){
     marcarSeleccion(boton);
