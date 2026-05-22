@@ -36,85 +36,81 @@
     <script>
         let perfume = localStorage.getItem("perfumeFinal");
 
-        /* MOSTRAR NOMBRE */
+       
         document.getElementById("perfumeResultado").innerHTML = perfume;
 
-        /* VARIABLES */
+     
         let descripcion = "";
         let imagen = "";
 
-        /* ==========================================
-           RESULTADOS MASCULINOS (6 Opciones)
-           ========================================== */
+       
 
         if(perfume == "Le Male (Clásico)"){
             descripcion = "El clásico indiscutible. Una fragancia fresca y reconfortante que rompe moldes con su combinación de lavanda, menta y una estela oriental de vainilla.";
-            imagen = "imagen/le-male-clasico.png";
+            imagen = "imagenes/le-male-clasico.png";
         }
 
         if(perfume == "ultra Male"){
             descripcion = "Ultra Male representa una personalidad intensa, seductora y marcadamente nocturna. Una combinación perfecta de lavanda negra, pera y vainilla amaderada.";
-            imagen = "imagen/ultra-male.png";
+            imagen = "imagenes/ultra-male.png";
         }
 
         if(perfume == "Le Male Le Parfum"){
             descripcion = "Transmite elegancia, sofisticación y presencia imponente. El icónico marinero se viste de oficial con un traje negro y dorado, liderando con notas de cardamomo, lavanda e iris.";
-            imagen = "imagen/le-male-parfum.png";
+            imagen = "imagenes/le-male-parfum.png";
         }
 
         if(perfume == "Le Beau"){
             descripcion = "Le Beau refleja una energía tropical, fresca y aventurera. Un torso escultural que esconde una fragancia ultra atractiva de madera de coco, bergamota y haba tonka.";
-            imagen = "imagen/le-beau.png";
+            imagen = "imagenes/le-beau.png";
         }
 
 
         if(perfume == "Scandal Pour Homme"){
             descripcion = "La esencia de un campeón imponente y provocador. Un perfume amaderado oriental con notas de caramelo dorado, haba tonka y vetiver que golpea con elegancia.";
-            imagen = "imagen/scandal-hombre.png";
+            imagen = "imagenes/scandal-hombre.png";
         }
 
-        /* ==========================================
-           RESULTADOS FEMENINOS (6 Opciones)
-           ========================================== */
+       
 
         if(perfume == "Classique"){
             descripcion = "La feminidad icónica hecha perfume. Una fragancia sensual y ultrafemenina que combina la dulzura del azahar con el toque atrevido del jengibre y la vainilla.";
-            imagen = "imagen/classique.png";
+            imagen = "imagenes/classique.png";
         }
 
         if(perfume == "La Belle"){
             descripcion = "Un elixir adictivo, dulce y luminoso. Diseñado para una personalidad magnética donde la vainilla oriental se funde con la frescura frutal de la pera.";
-            imagen = "imagen/la-belle.png";
+            imagen = "imagenes/la-belle.png";
         }
 
         if(perfume == "La Belle Le Parfum"){
             descripcion = "La tentación en su máxima intensidad. Una versión ultra sexy y misteriosa que intensifica la pera con un corazón profundo de haba tonka y vainilla adictiva.";
-            imagen = "imagen/la-belle-parfum.png.png";
+            imagen = "imagenes/la-belle-parfum.png.png";
         }
 
         if(perfume == "Scandal"){
             descripcion = "Una esencia atrevida, intensa y muy glamorosa. Una sobredosis de placer que rompe esquemas combinando la miel gourmet con la elegancia de la gardenia y el pachulí.";
-            imagen = "imagen/scandal.png";
+            imagen = "imagenes/scandal.png";
         }
 
         if(perfume == "Scandal Le Parfum"){
             descripcion = "Un perfume floral ámbar que ofende las buenas costumbres con su audacia. Una fragancia imponente dominada por el jazmín, el caramelo salado y la vainilla negra.";
-            imagen = "imagen7scandal-le-parfum.png";
+            imagen = "imagenes/scandal-le-parfum.png";
         }
 
         if(perfume == "Divine"){
             descripcion = "Elegancia celestial y sofisticación absoluta. Una fragancia majestuosa e imponente que celebra la libertad femenina con notas saladas, flores blancas y un corazón de merengue dorado.";
-            imagen = "imagen/divine.png";
+            imagen = "imagene/divine.png";
         }
 
-        /* MOSTRAR DATOS EN LA PÁGINA */
+       
         document.getElementById("descripcionPerfume").innerHTML = descripcion;
         
         if (imagen !== "") {
             document.getElementById("imagenPerfume").src = imagen;
         }
 
-        /* VOLVER */
+       
         function volverInicio(){
             window.location.href = "index.html";
         }
