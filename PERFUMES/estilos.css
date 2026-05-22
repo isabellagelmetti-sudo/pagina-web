@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #060709;
+    color: white;
+}
+
+/* -------------------- */
+/* PÁGINA PRINCIPAL */
+/* -------------------- */
+.contenedor-inicio {
+    width: 100%;
+    height: 100vh;
+    background-image: url("imagenes/fondo.back.png"); /* Usa tu imagen de fondo */
+    background-size: 100% 100%; /* Ajuste perfecto sin agrandarse de más */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Capa oscura balanceada para apreciar los detalles del humo */
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(6, 7, 9, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.overlay h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-shadow: 0px 4px 10px rgba(0,0,0,0.9);
+}
+
+.eslogan {
+    font-size: 18px;
+    margin-bottom: 35px;
+    color: #d4af37; /* Dorado */
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-shadow: 0px 2px 8px rgba(10, 46, 48, 0.9);
+}
+
+/* Formulario traslúcido premium */
+.formulario {
+    width: 100%;
+    max-width: 380px;
+    background: rgba(22, 26, 35, 0.75);
+    padding: 35px 25px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.formulario input {
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: rgba(6, 7, 9, 0.6);
+    color: white;
+    transition: 0.3s;
+}
+
+.formulario input:focus {
+    outline: none;
+    border-color: #caa93c;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}
+
+.formulario button {
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #b89324 0%, #2e8d79 50%, #f3e195 100%);
+    color: #060709;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+}
+
+/* -------------------- */
+/* SISTEMA.HTML */
+/* -------------------- */
+.contenedor-test {
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #161a23 0%, #060709 100%);
+    padding: 50px 20px;
+}
+
+.titulo-test {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.barra {
+    width: 100%;
+    max-width: 700px;
+    height: 6px;
+    background-color: rgba(255,255,255,0.08);
+    border-radius: 20px;
+    margin: 0 auto 50px auto;
+}
+
+.progreso {
+    height: 100%;
+    background: linear-gradient(90deg, #b89324, #d4af37);
+    border-radius: 20px;
+    box-shadow: 0 0 8px #d4af37;
+    transition: 0.4s ease;
+}
+
+.pregunta {
+    max-width: 700px;
+    margin: 0 auto 55px auto;
+    text-align: center;
+    background: rgba(22, 26, 35, 0.4);
+    padding: 30px 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.pregunta h2 {
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #e5e7eb;
+}
+
+.opciones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.opciones button {
+    width: 210px;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    background-color: #161a23;
+    color: #cbd5e1;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.opciones button:hover {
+    background-color: rgba(212, 175, 55, 0.08);
+    border-color: #d4af37;
+    color: #d4af37;
+    transform: translateY(-2px);
+}
+
+.boton-final {
+    display: block;
+    margin: auto;
+    padding: 16px 45px;
+    border: 1px solid #d4af37;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #d4af37;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-final:hover {
+    background-color: #d4af37;
+    color: #060709;
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+}
+
+/* -------------------- */
+/* RESULTADO.HTML */
+/* -------------------- */
+.resultado-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("imagenes/fondo.back.png"); /* Mismo fondo premium */
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultado-overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(6, 7, 9, 0.82);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.titulo-resultado {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #9ca3af;
+    margin-bottom: 5px;
+}
+
+#perfumeResultado {
+    font-size: 42px;
+    color: #d4af37;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#imagenPerfume {
+    width: 100%;
+    max-width: 230px;
+    height: 250px;
+    object-fit: contain;
+    margin-bottom: 25px;
+    filter: drop-shadow(0px 10px 20px rgba(0,0,0,0.8));
+    animation: flotarPerfume 4s ease-in-out infinite; /* Animación de flotación */
+}
+
+#descripcionPerfume {
+    width: 100%;
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    color: #e5e7eb;
+}
+
+.resultado-overlay button {
+    padding: 15px 35px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: #060709;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.resultado-overlay button:hover {
+    background-color: #d4af37;
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+/* EFECTO FLOTANTE */
+@keyframes flotarPerfume {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}

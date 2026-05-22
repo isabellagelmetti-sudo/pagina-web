@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Jean Paul Gaultier</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <div class="contenedor-test">
+
+        <h1 class="titulo-test">
+            Descubrí tu perfume ideal
+        </h1>
+
+        <div class="barra">
+            <div class="progreso"></div>
+        </div>
+
+        <div class="pregunta">
+            <h2>¿Qué línea querés explorar?</h2>
+            <div class="opciones">
+                <button onclick="seleccionarGenero('masculino', this)">Masculina</button>
+                <button onclick="seleccionarGenero('femenino', this)">Femenina</button>
+            </div>
+        </div>
+
+        <div class="pregunta">
+            <h2>¿Cómo te describirían?</h2>
+            <div class="opciones">
+                <button onclick="sumarPuntos('elegante', this)">Elegante</button>
+                <button onclick="sumarPuntos('seductor', this)">Seductor/a</button>
+                <button onclick="sumarPuntos('misterioso', this)">Misterioso/a</button>
+                <button onclick="sumarPuntos('aventurero', this)">Aventurero/a</button>
+                <button onclick="sumarPuntos('dulce', this)">Dulce</button>
+                <button onclick="sumarPuntos('dominante', this)">Dominante</button>
+            </div>
+        </div>
+
+        <div class="pregunta">
+            <h2>¿Para qué ocasión buscás el perfume?</h2>
+            <div class="opciones">
+                <button onclick="sumarPuntos('diario', this)">Uso diario</button>
+                <button onclick="sumarPuntos('noche', this)">Salidas nocturnas</button>
+                <button onclick="sumarPuntos('citas', this)">Citas</button>
+                <button onclick="sumarPuntos('elegante2', this)">Eventos elegantes</button>
+                <button onclick="sumarPuntos('verano', this)">Vacaciones / verano</button>
+            </div>
+        </div>
+
+        <div class="pregunta">
+            <h2>¿Qué aromas preferís?</h2>
+            <div class="opciones">
+                <button onclick="sumarPuntos('vainilla', this)">Vainilla</button>
+                <button onclick="sumarPuntos('lavanda', this)">Lavanda</button>
+                <button onclick="sumarPuntos('coco', this)">Coco tropical</button>
+                <button onclick="sumarPuntos('flores', this)">Flores blancas</button>
+                <button onclick="sumarPuntos('citricos', this)">Cítricos</button>
+                <button onclick="sumarPuntos('madera', this)">Amaderados</button>
+            </div>
+        </div>
+
+        <div class="pregunta">
+            <h2>¿Qué intensidad buscás?</h2>
+            <div class="opciones">
+                <button onclick="sumarPuntos('suave', this)">Suave</button>
+                <button onclick="sumarPuntos('moderada', this)">Moderada</button>
+                <button onclick="sumarPuntos('intensa', this)">Intensa</button>
+                <button onclick="sumarPuntos('muyintensa', this)">Muy intensa</button>
+            </div>
+        </div>
+
+        <div class="pregunta">
+            <h2>¿Cómo querés que te perciban?</h2>
+            <div class="opciones">
+                <button onclick="sumarPuntos('sexy', this)">Sexy</button>
+                <button onclick="sumarPuntos('sofisticado', this)">Sofisticado/a</button>
+                <button onclick="sumarPuntos('fresco', this)">Fresco/a</button>
+                <button onclick="sumarPuntos('imponente', this)">Imponente</button>
+            </div>
+        </div>
+
+        <button class="boton-final" onclick="calcularResultado()">
+            VER RESULTADO
+        </button>
+
+    </div>
+
+    <script src="codigo.js"></script>
+
+</body>
+</html>
